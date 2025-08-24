@@ -1,0 +1,247 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 4px solid #3498db;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.navigation {
+    margin-top: 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border-left: 5px solid #e74c3c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h2 {
+    color: #e74c3c;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+    padding: 10px 0;
+}
+
+/* Cards Section */
+.cards-section {
+    margin-bottom: 40px;
+}
+
+.cards-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+    flex: 0 1 300px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #2980b9;
+}
+
+/* Information Section - Box Model Demo */
+.info-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    text-align: center;
+    color: #27ae60;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #27ae60;
+}
+
+.spacing-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.box-example {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ecf0f1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Margin Example */
+.margin-example {
+    margin: 30px auto; /* Large margin to show space outside */
+    padding: 20px;
+    border: 2px solid #e67e22;
+    background-color: #ffeaa7;
+}
+
+/* Padding Example */
+.padding-example {
+    margin: 10px auto;
+    padding: 40px; /* Large padding to show space inside */
+    border: 2px solid #6c5ce7;
+    background-color: #dda0dd;
+}
+
+/* Border Example */
+.border-example {
+    margin: 10px auto;
+    padding: 20px;
+    border: 8px solid #fd79a8; /* Thick border to demonstrate */
+    background-color: #fab1a0;
+}
+
+.box-example p {
+    margin: 0;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #3498db;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        margin: 10px 0;
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .nav-link {
+        display: block;
+        margin: 5px 0;
+    }
+}
